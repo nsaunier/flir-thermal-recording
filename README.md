@@ -35,7 +35,42 @@
 
         /bin/bash /home/pi/Documents/enregistrement.sh
 
-TODO: explanation to use the [DS3231 module](https://www.youtube.com/watch?v=9aN2ocO2AWY&fbclid=IwAR33J0hH_mVIZ8hJz-R_pkl1oTHK7u2YLEb1HO17pE6eJCj02H-VLaFHYGI)
+7. (Optional) You can also add a RTC (Real Time Clock) module such as DS3231
+
+    Boot your Pi with the connected RTC
+    
+        sudo nano /etc/modules
+    
+    Add this line at the end of the file
+    
+        rtc-ds3231
+    
+    Once you saved the file, modify also the /boot/config.txt
+    
+        sudo nano /boot/config.txt
+    
+    By adding this line at the end of the file
+    
+        dtoverlay=i2c-rtc,ds3231
+    
+    Remove the [fake-hwclock] (https://packages.debian.org/sid/fake-hwclock)
+    
+        sudo apt-get -y remove fake-hwclock
+        sudo update-rc.d -f fake-hwclock remove
+    
+    Finaly, edit the /lib/udev/hwclock-set file
+    
+        sudo nano /lib/udev/hwclock-set
+
+    And comment the following lines:
+    
+        if [ -e /run/systemd/system ] ; then
+            exit 0
+        fi
+    
+    You can than reboot your system for changes to take effect
+    
+        reboot
 
 ## Usage
 TODO
