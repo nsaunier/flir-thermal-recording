@@ -53,7 +53,7 @@
     
         dtoverlay=i2c-rtc,ds3231
     
-    Remove the [fake-hwclock] (https://packages.debian.org/sid/fake-hwclock)
+    Remove the [fake-hwclock](https://packages.debian.org/sid/fake-hwclock)
     
         sudo apt-get -y remove fake-hwclock
         sudo update-rc.d -f fake-hwclock remove
@@ -68,7 +68,7 @@
             exit 0
         fi
     
-    You can than reboot your system for changes to take effect
+    You can then reboot your system for changes to take effect
     
         reboot
 
