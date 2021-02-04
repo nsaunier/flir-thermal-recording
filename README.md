@@ -1,5 +1,9 @@
 # flir-thermal-recording
 
+## The project
+
+This project aims at providing support to use [FLIR](https://www.flir.eu/) thermal cameras in conjunction with a Raspeberry Pi device. At the end of the installation one should be able to save thermal records video/pictures on their hardware ([Raspberri Pi](https://www.raspberrypi.org/).
+
 ## What you'll need
 - Raspberry Pi (tested on model 3 B+, but any RPi with an Ethernet port should work) with an SD card
 - IP thermal camera (tested on the FLIR FC-690 S)
