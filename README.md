@@ -2,7 +2,7 @@
 
 ## The project
 
-This project aims at providing support to use [FLIR](https://www.flir.eu/) thermal cameras in conjunction with a Raspeberry Pi device. At the end of the installation one should be able to save thermal records video/pictures on their hardware ([Raspberri Pi](https://www.raspberrypi.org/).
+This project aims at providing support to use [FLIR](https://www.flir.eu/) thermal cameras in conjunction with a Raspeberry Pi device. At the end of the installation one should be able to save thermal records video/pictures on their hardware ([Raspberri Pi](https://www.raspberrypi.org/)).
 
 ## What you'll need
 - Raspberry Pi (tested on model 3 B+, but any RPi with an Ethernet port should work) with an SD card
@@ -13,7 +13,7 @@ This project aims at providing support to use [FLIR](https://www.flir.eu/) therm
 ## Setup
 1. Begin by installing an OS on the Raspberry Pi
 
-    You'll need minimally VLC. The easiest way to do so is by using [balenaEtcher](https://www.balena.io/etcher/) and [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) with desktop and recommended software.
+    You'll need minimally VLC. The easiest way to do so is by using [balenaEtcher](https://www.balena.io/etcher/) and [Raspberry Pi OS](https://www.raspberrypi.com/software/) (tested initially with [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)) with desktop and recommended software.
 
 2. Boot the Raspberry Pi a first time to initialize the kernel correctly
 
